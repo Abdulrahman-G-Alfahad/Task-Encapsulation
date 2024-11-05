@@ -32,7 +32,7 @@ public class Student {
     }
 
     public void setGpa(double gpa) {
-        if (0 >= gpa || gpa >= 4) this.gpa = gpa;
-        else this.gpa = 0;
+        if (gpa < 0 || gpa > 4) this.gpa=0;
+        else {this.gpa = gpa;}
     }
 }
